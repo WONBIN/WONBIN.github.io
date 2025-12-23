@@ -26,9 +26,9 @@ urls:
 
 author_logo: profile.png
 author: Wonbin Robert Seo
-author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
-author_location: South Korea
+author_bio: Hi, my name is Wonbin Robert Seo. I study Computer Science at PNU. Officially, I write code; unofficially, I am a professional Googler. :D
+author_email: "wonbingod20@gmail.com"
+author_location: Busan, South Korea
 author_website_url: "https://sujaykundu.com"
 typewrite-text: Pray not for lighter burdens, but for stronger shoulders
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
@@ -51,10 +51,10 @@ author_work_experiences:
 # Education
 author_education_details:
               - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
+                college_name: PNU
+                college_url: https://www.pusan.ac.kr/kor/Main.do
                 college_degree: CS Engineer
-                description: Bachelor of Technology
+                description: Bachelor of Computer Science Engineering
                 visibility: true
 
 # Projects
