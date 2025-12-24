@@ -1,0 +1,11 @@
+/* 내비게이션 메뉴 중앙 정렬 시도 */
+.site-nav {
+    float: none !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.site-nav .page-link {
+    display: inline-block;
+    margin: 0 30px !important; /* 양옆 간격 */
+}
