@@ -1,3 +1,110 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wonbin Seo | Portfolio</title>
+<meta name="description" content="서원빈(Wonbin Seo)의 개인 포트폴리오 - 정보컴퓨터공학부, C/C++/Python, 웹 프로젝트 FREE-T">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#home" class="logo">Wonbin Seo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero container">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>서원빈 <span class="divider">/</span> Wonbin Seo</h1>
+      <p class="hero-sub">부산대학교 정보컴퓨터공학부 학생입니다.<br>
+        C/C++, Python을 기반으로 공부하며, 웹 서비스를 직접 설계하고 구현하는 것을 좋아합니다.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn-outline">연락하기</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title"><span class="num">01</span> About</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          컴퓨터공학을 전공하며 알고리즘과 시스템의 기본기를 C/C++로 다지고, Python으로 데이터를 다루는 것을 즐깁니다.
+          최근에는 팀 프로젝트 <strong>FREE-T</strong>에서 웹 시스템 설계와 구현을 전담하며, 아이디어를 실제로 동작하는
+          서비스로 만드는 경험을 쌓고 있습니다.
+        </p>
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2 class="section-title"><span class="num">02</span> Projects</h2>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h3>FREE-T</h3>
+          <p class="project-desc">
+            AI 기반 예술특수학교 안전 모니터링 시스템. 웹캠 영상에서 이상 행동을 실시간으로 감지해 교사에게 알림을 보내고,
+            골든타임 타이머와 응급시설 지도를 제공하는 end-to-end 웹 서비스입니다. 팀 내에서 웹 시스템 설계 및 전체 구현을 담당했습니다.
+          </p>
+          <ul class="tag-list">
+            <li>React</li>
+            <li>Vite</li>
+            <li>TensorFlow.js</li>
+            <li>Vercel</li>
+            <li>Kakao Maps API</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://pnu-free-t.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/WONBIN/PNU_Free-T" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <p class="more-soon">더 많은 프로젝트가 곧 추가될 예정입니다.</p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title"><span class="num">03</span> Contact</h2>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:wbseo@pusan.ac.kr">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">wbseo@pusan.ac.kr</span>
+        </a>
+        <a class="contact-item" href="https://github.com/WONBIN" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/WONBIN</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Wonbin Seo. Built with plain HTML/CSS/JS.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
