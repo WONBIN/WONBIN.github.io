@@ -10,95 +10,109 @@
 </head>
 <body>
 
-  <div class="page">
+  <table class="page">
+    <tr>
+      <td>
 
-    <nav class="topnav">
-      <a href="#home">Home</a> / <a href="#about">About</a> / <a href="#projects">Projects</a> / <a href="#publications">Publications</a> / <a href="#contact">Contact</a>
-    </nav>
+        <nav class="topnav">
+          <a href="#home">Home</a> / <a href="#about">About</a> / <a href="#projects">Projects</a> / <a href="#publications">Publications</a> / <a href="#contact">Contact</a>
+        </nav>
 
-    <header id="home" class="header">
-      <h1>서원빈 <span class="name-en">Wonbin Seo</span></h1>
+        <table id="home" class="header-table">
+          <tr>
+            <td class="header-text">
+              <p class="name">서원빈 Wonbin Seo</p>
+              <p>
+                안녕하세요, 부산대학교 정보컴퓨터공학부에 재학 중인 서원빈입니다.
+                C/C++, Python으로 기초를 다지고, 최근에는 웹 서비스를 직접 설계하고 구현하는 데 집중하고 있습니다.
+                아이디어를 실제로 동작하는 서비스로 만드는 과정에서 가장 큰 흥미를 느끼며, 팀 프로젝트
+                <b>FREE-T</b>에서 웹 시스템 설계와 구현을 전담했습니다.
+                최근에는 의료 분야 LLM의 추론 신뢰성에 대한 연구로 논문 투고를 진행하고 있습니다.
+              </p>
+              <p>
+                <a href="mailto:wbseo@pusan.ac.kr">Email</a> / <a href="https://github.com/WONBIN" target="_blank" rel="noopener">Github</a>
+              </p>
+            </td>
+            <td class="header-photo">
+              <img src="profile.jpg" alt="서원빈 프로필 사진">
+            </td>
+          </tr>
+        </table>
 
-      <div class="intro-row">
-        <div class="intro-text">
-          <p>
-            안녕하세요, 부산대학교 정보컴퓨터공학부에 재학 중인 서원빈입니다.
-            C/C++, Python으로 기초를 다지고, 최근에는 웹 서비스를 직접 설계하고 구현하는 데 집중하고 있습니다.
-            아이디어를 실제로 동작하는 서비스로 만드는 과정에서 가장 큰 흥미를 느끼며, 팀 프로젝트
-            <strong>FREE-T</strong>에서 웹 시스템 설계와 구현을 전담했습니다.
-            최근에는 의료 분야 LLM의 추론 신뢰성에 대한 연구로 논문 투고를 진행하고 있습니다.
-          </p>
-          <p class="links-row">
-            <a href="mailto:wbseo@pusan.ac.kr">Email</a> / <a href="https://github.com/WONBIN" target="_blank" rel="noopener">GitHub</a>
-          </p>
-        </div>
-        <div class="intro-photo">
-          <img src="profile.jpg" alt="서원빈 프로필 사진">
-        </div>
-      </div>
-    </header>
+        <table id="about" class="section-table">
+          <tr><td colspan="2"><h2>Interests</h2></td></tr>
+          <tr>
+            <td colspan="2">
+              <p>
+                <b>Languages:</b> C, C++, Python, JavaScript &nbsp;&nbsp;
+                <b>Web:</b> React, Vite, Git / GitHub &nbsp;&nbsp;
+                <b>Research:</b> 웹 서비스 설계 및 구현, LLM의 추론 신뢰성과 안전성
+              </p>
+            </td>
+          </tr>
+        </table>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <ul class="interest-list">
-        <li><strong>Languages</strong> &mdash; C, C++, Python, JavaScript</li>
-        <li><strong>Web</strong> &mdash; React, Vite, Git / GitHub</li>
-        <li><strong>Interests</strong> &mdash; 웹 서비스 설계 및 구현, LLM의 추론 신뢰성 및 안전성</li>
-      </ul>
-    </section>
+        <table class="section-table">
+          <tr><td colspan="2"><h2>News</h2></td></tr>
+          <tr>
+            <td colspan="2">
+              <p><b>08.2026.</b> 개인 홈페이지를 새로 열었습니다.</p>
+              <p><b>2026.</b> 논문 <a href="#pub-dbr">"Beyond Accuracy: Measuring Reasoning Inconsistency of Large Language Models in Medical Domain"</a>이 <i>DBR</i> 저널에서 수정 후 게재가 판정을 받아, Rebuttal과 수정본을 제출하고 최종 결과를 기다리고 있습니다.</p>
+              <p><b>2026.</b> 팀 프로젝트 <a href="#projects">FREE-T</a> &mdash; AI 기반 예술특수학교 안전 모니터링 시스템을 개발했습니다.</p>
+            </td>
+          </tr>
+        </table>
 
-    <section class="section">
-      <h2>News</h2>
-      <ul class="news-list">
-        <li><span class="news-date">08.2026.</span> 개인 홈페이지를 새로 열었습니다.</li>
-        <li><span class="news-date">2026.</span> 논문 <a href="#pub-dbr">"Beyond Accuracy: Measuring Reasoning Inconsistency of Large Language Models in Medical Domain"</a>이 <em>DBR</em> 저널에서 수정 후 게재가 판정을 받아, Rebuttal과 수정본을 제출하고 최종 결과를 기다리고 있습니다.</li>
-        <li><span class="news-date">2026.</span> 팀 프로젝트 <a href="#projects">FREE-T</a> — AI 기반 예술특수학교 안전 모니터링 시스템을 개발했습니다.</li>
-      </ul>
-    </section>
+        <table id="publications" class="section-table">
+          <tr><td colspan="2"><h2>Publications</h2></td></tr>
 
-    <section id="publications" class="section">
-      <h2>Publications</h2>
+          <tr id="pub-dbr" class="pub-row">
+            <td colspan="2">
+              <p class="pub-tags">Large Language Models, Medical AI, Reasoning Consistency</p>
+              <p class="pub-title">Beyond Accuracy: Measuring Reasoning Inconsistency of Large Language Models in Medical Domain</p>
+              <p class="pub-authors"><b>서원빈 (Wonbin Seo)</b></p>
+              <p class="pub-venue"><i>DBR</i> &mdash; 수정 후 게재가, Rebuttal 및 수정본 제출 완료, 최종 결과 대기 중</p>
+              <p class="pub-desc">의료 분야에서 언어모델의 답변 정확도만으로는 드러나지 않는 추론 과정의 불일치를 측정하는 연구입니다.</p>
+            </td>
+          </tr>
+        </table>
 
-      <article class="entry" id="pub-dbr">
-        <div class="entry-thumb entry-thumb--pub">DBR</div>
-        <div class="entry-body">
-          <p class="entry-tags">Large Language Models &middot; Medical AI &middot; Reasoning Consistency</p>
-          <p class="entry-title">Beyond Accuracy: Measuring Reasoning Inconsistency of Large Language Models in Medical Domain</p>
-          <p class="entry-authors"><strong>서원빈 (Wonbin Seo)</strong></p>
-          <p class="entry-venue"><em>DBR</em> &mdash; 수정 후 게재가, Rebuttal 및 수정본 제출 완료, 최종 결과 대기 중</p>
-          <p class="entry-desc">의료 분야에서 언어모델의 답변 정확도만으로는 드러나지 않는 추론 과정의 불일치를 측정하는 연구입니다.</p>
-        </div>
-      </article>
-    </section>
+        <table id="projects" class="section-table">
+          <tr><td colspan="2"><h2>Projects</h2></td></tr>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
+          <tr class="pub-row">
+            <td colspan="2">
+              <p class="pub-tags">React, Vite, TensorFlow.js, Vercel, Kakao Maps API</p>
+              <p class="pub-title">FREE-T</p>
+              <p class="pub-authors">웹 시스템 설계 및 전체 구현 담당 (팀 프로젝트)</p>
+              <p class="pub-desc">
+                AI 기반 예술특수학교 안전 모니터링 시스템. 웹캠 영상에서 이상 행동을 실시간으로 감지해 교사에게 알림을 보내고,
+                골든타임 타이머와 응급시설 지도를 제공하는 end-to-end 웹 서비스입니다.
+              </p>
+              <p class="pub-links">
+                <a href="https://pnu-free-t.vercel.app" target="_blank" rel="noopener">Live Demo</a> / <a href="https://github.com/WONBIN/PNU_Free-T" target="_blank" rel="noopener">Github</a>
+              </p>
+            </td>
+          </tr>
 
-      <article class="entry">
-        <div class="entry-thumb entry-thumb--project">FT</div>
-        <div class="entry-body">
-          <p class="entry-tags">React &middot; Vite &middot; TensorFlow.js &middot; Vercel &middot; Kakao Maps API</p>
-          <p class="entry-title">FREE-T</p>
-          <p class="entry-authors">웹 시스템 설계 및 전체 구현 담당 (팀 프로젝트)</p>
-          <p class="entry-desc">
-            AI 기반 예술특수학교 안전 모니터링 시스템. 웹캠 영상에서 이상 행동을 실시간으로 감지해 교사에게 알림을 보내고,
-            골든타임 타이머와 응급시설 지도를 제공하는 end-to-end 웹 서비스입니다.
-          </p>
-          <p class="entry-links">
-            <a href="https://pnu-free-t.vercel.app" target="_blank" rel="noopener">Live Demo</a> / <a href="https://github.com/WONBIN/PNU_Free-T" target="_blank" rel="noopener">GitHub</a>
-          </p>
-        </div>
-      </article>
+          <tr>
+            <td colspan="2"><p class="more-soon">더 많은 프로젝트가 곧 추가될 예정입니다.</p></td>
+          </tr>
+        </table>
 
-      <p class="more-soon">더 많은 프로젝트가 곧 추가될 예정입니다.</p>
-    </section>
+        <table id="contact" class="footer-table">
+          <tr>
+            <td colspan="2">
+              <hr>
+              <p><a href="mailto:wbseo@pusan.ac.kr">wbseo@pusan.ac.kr</a> / <a href="https://github.com/WONBIN" target="_blank" rel="noopener">github.com/WONBIN</a></p>
+              <p class="footer-note">&copy; <span id="year"></span> Wonbin Seo.</p>
+            </td>
+          </tr>
+        </table>
 
-    <footer id="contact" class="footer">
-      <p><a href="mailto:wbseo@pusan.ac.kr">wbseo@pusan.ac.kr</a> / <a href="https://github.com/WONBIN" target="_blank" rel="noopener">github.com/WONBIN</a></p>
-      <p class="footer-note">&copy; <span id="year"></span> Wonbin Seo.</p>
-    </footer>
-
-  </div>
+      </td>
+    </tr>
+  </table>
 
   <script src="main.js"></script>
 </body>
