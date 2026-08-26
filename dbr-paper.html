@@ -45,24 +45,39 @@
         <div class="research-log">
           <h2>Research Log</h2>
 
-          <h3>Why did I think this problem was still open?</h3>
-          <p>My interest was always in how LLMs reason — outputs look plausible, but what happens inside stays opaque. <em>Beg to Differ</em> showed that reasoning does not converge on the same conclusion across languages, and proposed TIR to measure that gap. I had also been asking how far an LLM can replace or support a medical expert. <strong>This led to my research question: does the same inconsistency appear where a wrong answer carries clinical cost?</strong> No prior work had examined reasoning consistency in the medical domain, so I started there.</p>
+          <div class="log-entry">
+            <h3><span class="log-num">1</span>The gap between accuracy and reasoning was still unmeasured in medicine</h3>
+            <p class="log-subtitle">Beg to Differ tracked reasoning drift across languages; no one had tracked it against clinical stakes.</p>
+            <p>My interest was always in how LLMs reason — outputs look plausible, but what happens inside stays opaque. <em>Beg to Differ</em> showed that reasoning does not converge on the same conclusion across languages, and proposed TIR to measure that gap. I had also been asking how far an LLM can replace or support a medical expert. This led to my research question: <strong>does the same inconsistency appear where a wrong answer carries clinical cost?</strong> No prior work had examined reasoning consistency in the medical domain, so I started there.</p>
+          </div>
 
-          <h3>What did I define, and what did I give up?</h3>
-          <p>Accuracy tells you an answer was wrong. It does not tell you whether the reasoning behind it held. I classified every output along correctness and consistency into four cases — CC, CI, IC, II — and Case II stood out: <strong>errors where the reasoning chain collapsed accounted for 29.43% of all errors, outnumbering cases where coherent reasoning still led to a wrong answer.</strong></p>
-          <p>The grid locates the problem but does not explain it, so I designed a second layer for why reasoning failed: medical fact error, logical disconnection, information oversight, ambiguous response. This taxonomy is my own contribution.</p>
-          <p>TIR and accuracy require the full dataset, so I used an LLM-as-a-judge as the backbone and annotated 22 sampled instances myself to validate it. Agreement reached &kappa; = 0.756 on the four-way classification and &kappa; = 0.621 on the binary TIR judgment.</p>
-          <p>I chose domain over language as my axis. Carrying both variables would make observed inconsistency impossible to attribute to either one.</p>
+          <div class="log-entry">
+            <h3><span class="log-num">2</span>Reasoning collapse, not reasoning drift, is the dominant failure</h3>
+            <p class="log-subtitle">Four correctness&ndash;consistency cases, one dominant one.</p>
+            <p>Accuracy tells you an answer was wrong. It does not tell you whether the reasoning behind it held. I classified every output along correctness and consistency into four cases — CC, CI, IC, II — and Case II stood out: <strong>errors where the reasoning chain collapsed accounted for 29.43% of all errors</strong>, outnumbering cases where coherent reasoning still led to a wrong answer.</p>
+            <p>The grid locates the problem but does not explain it, so I designed a second layer for <em>why</em> reasoning failed: medical fact error, logical disconnection, information oversight, ambiguous response — a taxonomy that is my own contribution.</p>
+            <p>TIR and accuracy require the full dataset, so I used an LLM-as-a-judge as the backbone and annotated 22 sampled instances myself to validate it. Agreement reached <strong>&kappa; = 0.756</strong> on the four-way classification and <strong>&kappa; = 0.621</strong> on the binary TIR judgment.</p>
+            <p>I chose domain over language as my axis — carrying both variables would make observed inconsistency impossible to attribute to either one.</p>
+          </div>
 
-          <h3>Where did I have to revise the plan?</h3>
-          <p>My original framing centered on Case CI — inconsistency hidden behind correct answers. A reviewer noted that my results did not support it. I went back to the table and agreed: <strong>Case II was what stood out, and outright collapse of reasoning was more common than the pattern I had gone looking for.</strong> I rebuilt the argument around it during revision.</p>
-          <p>Human annotation pointed the same way. One case showed the model recognizing a history of recurrent depression, then selecting the treatment duration for a first episode. Another showed it reading a negatively framed question as positive, skipping the condition <em>immature</em> while still landing on the correct answer. Both supported TIR as a measure that locates reasoning failure independently of accuracy.</p>
+          <div class="log-entry">
+            <h3><span class="log-num">3</span>The plan changed when the data disagreed with it</h3>
+            <p class="log-subtitle">Case CI was the hypothesis; Case II was the finding.</p>
+            <p>My original framing centered on Case CI — inconsistency hidden behind correct answers. A reviewer noted that my results did not support it. I went back to the table and agreed: <strong>Case II was what stood out, and outright collapse of reasoning was more common than the pattern I had gone looking for.</strong> I rebuilt the argument around it during revision.</p>
+            <p>Human annotation pointed the same way. One case showed the model recognizing a history of recurrent depression, then selecting the treatment duration for a first episode. Another showed it reading a negatively framed question as positive, skipping the condition <em>immature</em> while still landing on the correct answer. Both supported TIR as a measure that locates reasoning failure independently of accuracy.</p>
+          </div>
 
-          <h3>What does this result still fail to answer?</h3>
-          <p><strong>Sample size is the weakest point — 22 items is too small to generalize error-type tendencies</strong>, so the patterns should be read as preliminary. I was also the only annotator, so no inter-rater reliability could be computed; agreement with the judge is established, but whether my criteria hold for other experts is not. Human validation was limited to English items, leaving the Case IC &rarr; Case II pattern in Korean unresolved: it may stem from the model's reasoning or from the annotator's language processing. Extending this work means a larger sample including MMLU-ProX, and cross-validation with multiple expert annotators.</p>
+          <div class="log-entry">
+            <h3><span class="log-num">4</span>Twenty-two annotated items is a floor, not a conclusion</h3>
+            <p class="log-subtitle">One annotator, one language, one open question left for scale.</p>
+            <p><strong>Sample size is the weakest point — 22 items is too small to generalize error-type tendencies</strong>, so the patterns should be read as preliminary. I was also the only annotator, so no inter-rater reliability could be computed; agreement with the judge is established, but whether my criteria hold for other experts is not. Human validation was limited to English items, leaving the Case IC &rarr; Case II pattern in Korean unresolved — it may stem from the model's reasoning or from the annotator's language processing. Extending this work means a larger sample including MMLU-ProX, and cross-validation with multiple expert annotators.</p>
+          </div>
 
-          <h3>What changed in how I work</h3>
-          <p>I stopped treating a paper as something to close out. Wanting to finish quickly narrowed what I was willing to look at, and that pressure was self-imposed; <strong>what I aim for now is the best version reachable in the time available, not the fastest ending.</strong> Working through arguments with my advisor also taught me to ask what logical steps are needed to reach the point I want to make, and how to distribute them across paragraphs.</p>
+          <div class="log-entry">
+            <h3><span class="log-num">5</span>Finishing fast stopped being the goal</h3>
+            <p class="log-subtitle">The deadline pressure was self-imposed.</p>
+            <p>I stopped treating a paper as something to close out. Wanting to finish quickly narrowed what I was willing to look at, and that pressure was self-imposed; <strong>what I aim for now is the best version reachable in the time available, not the fastest ending.</strong> Working through arguments with my advisor also taught me to ask what logical steps are needed to reach the point I want to make, and how to distribute them across paragraphs.</p>
+          </div>
         </div>
       </div>
     </div>

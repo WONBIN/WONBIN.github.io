@@ -238,15 +238,34 @@ span.highlight {
   margin: 0 0 20px 0;
 }
 
-.research-log h3 {
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 700;
-  margin: 26px 0 10px 0;
+.log-entry {
+  margin-bottom: 30px;
 }
 
-.research-log h3:first-of-type {
-  margin-top: 0;
+.log-entry:last-child {
+  margin-bottom: 0;
+}
+
+.research-log h3 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+}
+
+.log-num {
+  display: inline-block;
+  color: #888888;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.log-subtitle {
+  color: #999999 !important;
+  font-style: italic;
+  font-size: 13px !important;
+  margin: 0 0 14px 0 !important;
 }
 
 .research-log p {
