@@ -224,17 +224,12 @@ span.highlight {
 }
 
 .research-log {
-  background: #1b1b1b;
-  color: #e6e6e6;
-  border-radius: 8px;
-  padding: 32px 36px;
   margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .research-log h2 {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
   margin: 0 0 20px 0;
 }
 
@@ -247,7 +242,6 @@ span.highlight {
 }
 
 .research-log h3 {
-  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
@@ -256,31 +250,20 @@ span.highlight {
 
 .log-num {
   display: inline-block;
-  color: #888888;
+  color: #999999;
   font-weight: 400;
   margin-right: 10px;
 }
 
 .log-subtitle {
-  color: #999999 !important;
+  color: #777777 !important;
   font-style: italic;
   font-size: 13px !important;
   margin: 0 0 14px 0 !important;
 }
 
 .research-log p {
-  color: #cfcfcf;
-  font-size: 14px;
+  font-size: 14.5px;
   line-height: 1.75;
   margin-bottom: 14px;
-}
-
-.research-log strong {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.research-log em {
-  color: #b8b8b8;
-  font-style: italic;
 }
