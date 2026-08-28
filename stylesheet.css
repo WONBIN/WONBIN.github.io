@@ -69,6 +69,12 @@ h2 {
   font-weight: 700;
 }
 
+.paper-authors,
+.paper-authors strong {
+  font-family: 'Pretendard', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
